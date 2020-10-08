@@ -14,10 +14,10 @@
 * Linear regression: If you increase X by 1 unit, y is predicted to increase by the given coefficient value (B1) respectively if the other features are held constant.
 * Logistic regression: If you increase X by 1 unit, the log odds increases by the given coefficient value (B1) respectively if the other features are held constant.
 
-Log odds to odds
+* Log odds to odds
 ```odds = np.exp(results.params)```
 Interpretation: If you increase X by 1, the odds of y increases by the [given odds number].
 
-Log odds to probability
+* Log odds to probability
 ```probs = sp.special.expit(results.params['intercept'] + results.params['X'])```
 Interpretation: Given that X = 1, the probability of y is [given probability number].
